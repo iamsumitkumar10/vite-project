@@ -1,19 +1,28 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./components/header/Header.jsx";
+import About from "./components/About/About.jsx";
+import Contact from "./components/contact/Contact.jsx";
+import Home from "./components/Home/Home.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import Hireme from "./components/Hireme/Hireme.jsx";
+
+ 
 
 function App() {
-   
+  
+
 
   return (
     <>
-      <div>
-        <h1 className="text-3xl font-bold underline text-red-100">
-          Hello world!
-        </h1>
-        
-      </div>
+      <Header />
+      <Home />
+      <About />
+   
+      <Contact />
+      <Hireme />
+      <Footer />
     </>
   );
 }
